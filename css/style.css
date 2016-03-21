@@ -1,7 +1,14 @@
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
 }
 
-.navbar-collapse .collapse{
+.navbar-collapse, .navbar-collapse .navbar-nav > li > a:hover, .navbar-collapse .navbar-nav > li > a:focus {
     background-color: #00bcd4;
 }
+
+ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
+    color: #fafafa;
+}
+
+
