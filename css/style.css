@@ -1,3 +1,9 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
@@ -19,13 +25,21 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     margin-right: 60px;
 }
 
+.ham-li{
+    margin-top: 12px;
+}
+
+.head-li{
+    margin-left: 35px;
+}
+
 .fa-bars{
     padding-top: 10px;
     color: #fafafa;
+    cursor: pointer;
 }
 
 .hamburger{
-    margin: 20px;
     width: 30%;
 }
 
@@ -40,12 +54,13 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     display: block;
     min-height: 600px;
     height: 125%;
-    transition: all 300ms;
+    transition: all 400ms;
 }
 
 .menu-on {
     left: 0;
-    transition: all 300ms;
+    box-shadow: 8px 8px 20px -2px rgba(0, 0, 0, 0.2);
+    transition: all 400ms;
 }
 
 .fa-cog{
@@ -57,12 +72,13 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
 }
 
 .form-group{
-    margin-top: 20px;
+    margin: 14px 0 0 20px;
 }
 
 .glyphicon-search{
     color: #c3c3c3;
     font-size: 12pt;
+    border-right: 1px solid #c3c3c3;
 }
 
 p.notification-week{
@@ -71,6 +87,10 @@ p.notification-week{
 
 span.notification{
     color: #c3c3c3;
+}
+
+.profile{
+    margin: 20px 0 0 20px;
 }
 
 .profile-pic{
@@ -94,10 +114,13 @@ p.profile-education{
 
 input[type=text]{
     width: 200px;
+    height: 38px;
+    border-radius: 6px;
+    text-align: center;
 }
 
 div.notifications{
-    margin-top: 40px;
+    margin: 34px 0 0 20px;
 }
 
 /* enable absolute positioning */
@@ -113,9 +136,46 @@ div.notifications{
 }
 
 /* align icon */
-.left-addon .glyphicon  { left:  0px;}
-.right-addon .glyphicon { right: 0px;}
+.left-addon .glyphicon  { left:  0;}
+.right-addon .glyphicon { right: 0;}
 
 /* add padding  */
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+
+
+/* ------------- Fancy hamburger icon ------------- */
+#nav-toggle { position: absolute; left: 50%; top: 50%; }
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+#nav-toggle span:before {
+    top: -10px;
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 400ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}

@@ -9,16 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="../javascript/jquery-2.2.0.min.js"></script>
+    <script src="../javascript/bootstrap.min.js"></script>
     <script src="../javascript/script.js"></script>
 </head>
 
 <body>
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li><i class="fa fa-bars fa-2x"></i></li>
-            <li><a href="#">UIE Time Table</a></li>
+            <li class="ham-li"><a id="nav-toggle" href="#"><span></span></a></li>
+            <li class="head-li"><a href="#">UIE Time Table</a></li>
             <li><a href="#">Profile</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -27,37 +28,34 @@
         <ul class="nav navbar-nav navbar-right"></ul>
     </div>
 
-
     <div class="hamburger menu-off">
-        <div class="container">
-            <div class="profile">
-                <img src="../images/photo.png" class="profile-pic">
-                <p class="profile-name">Queenie Barends</p>
-                <p class="profile-education">HBO-ICT</p>
-                <div class="settings-icon">
-                    <i class="fa fa-cog fa-lg"></i>
-                </div>
+        <div class="profile">
+            <img src="../images/photo.png" class="profile-pic">
+            <p class="profile-name">Queenie Barends</p>
+            <p class="profile-education">HBO-ICT</p>
+            <div class="settings-icon">
+                <i class="fa fa-cog fa-lg"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="search-bar inner-addon left-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text" placeholder="Search" class="form-control" />
             </div>
 
-            <div class="form-group">
-                <div class="search-bar inner-addon left-addon">
-                    <i class="glyphicon glyphicon-search"></i>
-                    <input type="text" placeholder="Search" class="form-control" />
-                </div>
-
-                <div class="compare-bar inner-addon left-addon">
-                    <i class="glyphicon glyphicon-search"></i>
-                    <input type="text" placeholder="Compare" class="form-control" />
-                </div>
+            <div class="compare-bar inner-addon left-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text" placeholder="Compare" class="form-control" />
             </div>
+        </div>
 
-            <div class="notifications">
-                <h4>Notifications</h4>
-                <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
-                <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
-                <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
-                <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
-            </div>
+        <div class="notifications">
+            <h4>Notifications</h4>
+            <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
+            <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
+            <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
+            <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
         </div>
     </div>
 </body>
