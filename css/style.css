@@ -11,4 +11,87 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     color: #fafafa;
 }
 
+.navbar-nav{
+    margin-left: 80px;
+}
 
+.navbar-right{
+    margin-right: 60px;
+}
+
+.hamburger{
+    margin: 20px;
+    width: 40%;
+}
+
+.fa-cog{
+    color: #fafafa;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+.glyphicon-search{
+    color: #c3c3c3;
+    font-size: 12pt;
+}
+
+p.notification-week{
+    color: #00bcd4;
+}
+
+span.notification{
+    color: #c3c3c3;
+}
+
+.profile-pic{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+    /*border-radius: 50px;*/
+}
+
+p.profile-name{
+    margin-bottom: 0;
+}
+
+p.profile-education{
+    color: #c3c3c3;
+}
+
+.search-bar{
+    margin-bottom: 15px;
+}
+
+input[type=text]{
+    width: 200px;
+}
+
+div.notifications{
+    margin-top: 40px;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
