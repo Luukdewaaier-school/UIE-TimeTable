@@ -19,9 +19,33 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     margin-right: 60px;
 }
 
+.fa-bars{
+    padding-top: 10px;
+    color: #fafafa;
+}
+
 .hamburger{
     margin: 20px;
-    width: 40%;
+    width: 30%;
+}
+
+.hamburger-border{
+    border-right: 1px solid #e6e6e6;
+}
+
+.menu-off {
+    position: absolute;
+    left: -50%;
+    width: 22%;
+    display: block;
+    min-height: 600px;
+    height: 125%;
+    transition: all 300ms;
+}
+
+.menu-on {
+    left: 0;
+    transition: all 300ms;
 }
 
 .fa-cog{
@@ -65,7 +89,7 @@ p.profile-education{
 }
 
 .search-bar{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 input[type=text]{
