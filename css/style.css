@@ -95,9 +95,9 @@ span.notification{
 
 .profile-pic{
     height: 70px;
-    width: 70px;
+    width: 25%;
     margin-bottom: 10px;
-    /*border-radius: 50px;*/
+    border-radius: 50px;
 }
 
 p.profile-name{
@@ -113,9 +113,9 @@ p.profile-education{
 }
 
 input[type=text]{
-    width: 200px;
+    width: 90%;
     height: 38px;
-    border-radius: 6px;
+    border-radius: 0;
     text-align: center;
 }
 
