@@ -2,32 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>UIE Time Table</title>
 
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <script src="../javascript/jquery-2.2.0.min.js"></script>
-    <script src="../javascript/bootstrap.min.js"></script>
-    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
             <li class="ham-li"><a id="nav-toggle" href="#"><span></span></a></li>
-            <li class="head-li"><a href="#">UIE Time Table</a></li>
-            <li><a href="#">Profile</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Log out</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right"></ul>
     </div>
+    <div class="jumbotron topTimeTable">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-11">
+                            <span class="h2">Week 15 </span><span class="h5">(21  -  03  -  2016)</span>
+                    </div>
+                    <div class="col-md-1">
+                            <span id="prevTimetable" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span id="nextTimetable" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </div>
+            </div>
 
+        </div>
+    </div>
     <div class="hamburger menu-off">
         <div class="profile">
             <img src="../images/photo.png" class="profile-pic">
@@ -58,5 +66,420 @@
             <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-2">
+                <h2>Mon</h2>
+            </div>
+            <div class="col-md-2">
+                <h2>Tue</h2>
+            </div>
+            <div class="col-md-2">
+                <h2>Wed</h2>
+            </div>
+            <div class="col-md-2">
+                <h2>Thu</h2>
+            </div>
+            <div class="col-md-2">
+                <h2>Fri</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>08:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>09:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>10:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>11:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>12:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>13:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>14:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>15:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>16:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>17:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>18:00</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="box boxTime text-right">
+                    <span>19:00</span>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box boxBorder">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../javascript/materialize.min.js"></script>
+    <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/script.js"></script>
 </body>
 </html>

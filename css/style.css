@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     background-color: #fafafa;
 }
 
@@ -19,6 +19,7 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
 
 .navbar-nav{
     margin-left: 80px;
+    height: 50px;
 }
 
 .navbar-right{
@@ -144,6 +145,14 @@ div.notifications{
 .right-addon input { padding-right: 30px; }
 
 
+.topTimeTable{
+    background-color: #00bcd4 !important;
+    padding-top: 15px !important;
+    padding-bottom: 25px !important;
+    color: #fafafa !important;
+    margin-bottom: 0px !important;
+}
+
 /* ------------- Fancy hamburger icon ------------- */
 #nav-toggle { position: absolute; left: 50%; top: 50%; }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0; }
@@ -178,4 +187,40 @@ div.notifications{
 }
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
+}
+
+.rowJumbo{
+    display: inline;
+    height: 30px;
+    vertical-align: bottom;
+}
+
+h2{
+    font-weight: lighter !important;
+    color: #009688 !important;
+}
+
+.boxBorder{
+    border: solid 1px #e0e0e0;
+}
+
+.box{
+    height: 75px;
+    width: auto;
+}
+
+
+.col-md-2 {
+    padding: 0px !important;
+}
+
+.boxTime {
+    position: relative;
+}
+.boxTime span{
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    color: #256e71;
+    font-weight: lighter;
 }
