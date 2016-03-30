@@ -2,6 +2,11 @@ $(function(){
 
     var colorSwitch = $("#switch-offColor");
     colorSwitch.bootstrapSwitch();
+    var textSwitch = $("#switch-offText");
+    textSwitch.bootstrapSwitch();
+
+    var isLight = true;
+    var isDutch = false;
 
     $(".jumbotron").addClass("topTimeTable-background-light");
 
@@ -9,7 +14,6 @@ $(function(){
     var hamburger = $(".hamburger");
     var navToggle = $("#nav-toggle");
     var tableContainer = $(".time-table-container");
-    var isLightTheme = true;
     var isMenuOn = false;
 
     navToggle.click(function(){
@@ -53,10 +57,29 @@ $(function(){
     };
 
     //set theme
+    colorSwitch.on('switchChange.bootstrapSwitch', function(){
+        (isLight) ? darkTheme() : lightTheme();
+        isLight = !isLight;
+    });
 
-    colorSwitch.click(function(){
-        (isLightTheme) ? darkTheme() : lightTheme();
-        isLightTheme = !isLightTheme;
+    //set language, set parameter english to true / false
+    var switchLanguage = function(english){
+        $("div.search-bar input[type='text']").attr("placeholder", (english) ? "Search" : "Zoek");
+        $("div.compare-bar input[type='text']").attr("placeholder", (english) ? "Compare" : "Vergelijk");
+        $(".notifications h4").text((english) ? "Notifications" : "Wijzigingen");
+        $(".modal-title").text((english) ? "Settings" : "Instellingen");
+        $("label[for='switch-offColor']").text((english) ? "Light theme" : "Licht thema");
+        $("label[for='switch-offText']").text((english) ? "Set language to Dutch" : "Zet taal naar Nederlands");
+        $("label.default-class").text((english) ? "Default classes" : "Standaard ingestelde klassen");
+        $("input[type='text'].default-class1").attr("placeholder", (english) ? "Default class 1" : "Standaard klas 1");
+        $("input[type='text'].default-class2").attr("placeholder", (english) ? "Default class 2" : "Standaard klas 2");
+        $(".close-modal").text((english) ? "Close" : "Sluit");
+        $("span.notification").text((english) ? "Monday (28-05) - No school" : "Maandag (28-05) - Geen school");
+    };
+
+    textSwitch.on('switchChange.bootstrapSwitch', function(){
+        switchLanguage(isDutch);
+        isDutch = !isDutch;
     });
 
     /*$("td").click(function(){
