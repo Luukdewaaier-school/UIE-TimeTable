@@ -58,6 +58,11 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     transition: all 400ms;
 }
 
+.time-table-container {
+    margin-bottom: 40px;
+    position: absolute;
+}
+
 .menu-on {
     left: 0;
     box-shadow: 8px 8px 20px -2px rgba(0, 0, 0, 0.2);
@@ -118,10 +123,6 @@ input[type=text]{
     height: 38px;
     border-radius: 0;
     text-align: center;
-}
-
-.time-table{
-    margin-bottom: 40px;
 }
 
 div.notifications{
