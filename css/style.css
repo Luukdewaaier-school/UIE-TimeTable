@@ -120,6 +120,10 @@ input[type=text]{
     text-align: center;
 }
 
+.time-table{
+    margin-bottom: 40px;
+}
+
 div.notifications{
     margin: 34px 0 0 20px;
 }
@@ -150,7 +154,7 @@ div.notifications{
     padding-top: 15px !important;
     padding-bottom: 25px !important;
     color: #fafafa !important;
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 }
 
 /* ------------- Fancy hamburger icon ------------- */
@@ -211,7 +215,7 @@ h2{
 
 
 .col-md-2 {
-    padding: 0px !important;
+    padding: 0 !important;
 }
 
 .boxTime {
@@ -223,4 +227,8 @@ h2{
     bottom: 0;
     color: #256e71;
     font-weight: lighter;
+}
+
+#prevTimetable, #nextTimetable{
+    cursor:  pointer;
 }
