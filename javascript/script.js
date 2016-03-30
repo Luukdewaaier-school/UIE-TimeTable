@@ -11,18 +11,18 @@ $(function(){
         $(this).toggleClass("active");
 
         isMenuOn = !isMenuOn;
-        tableContainer.animate({ left:(isMenuOn) ? "13%" : "0"}, 400);
+        tableContainer.animate({ left:(isMenuOn) ? "12%" : "0"}, 400);
     });
 
-    $("td").click(function(){
+    /*$("td").click(function(){
         var data = getFormatedTableData("09:00 - 11:00", "pts4(beer)", "P2n_0.05")
         $(this).html("<div class='add-wrap'>" + data + "</div>");
 
-    });
+    });*/
 
-    var getFormatedTableData = function(time, teacher, location){
+    /*var getFormatedTableData = function(time, teacher, location){
         return "<p class='add-para para-time'>" + time + "</p>" +
                 "<p class='add-para'>" + teacher + "</p>" +
                 "<p class='add-para'>" + location + "</p>";
-    };
+    };*/
 });

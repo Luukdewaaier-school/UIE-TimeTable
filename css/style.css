@@ -27,7 +27,7 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
 }
 
 .ham-li{
-    margin-top: 12px;
+    margin-top: -10px;
 }
 
 .head-li{
@@ -54,7 +54,7 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     width: 22%;
     display: block;
     min-height: 600px;
-    height: 125%;
+    height: 150%;
     transition: all 400ms;
 }
 
@@ -153,7 +153,7 @@ div.notifications{
 .topTimeTable{
     background-color: #00bcd4 !important;
     padding-top: 15px !important;
-    padding-bottom: 25px !important;
+    padding-bottom: 15px !important;
     color: #fafafa !important;
     margin-bottom: 0 !important;
 }
@@ -214,6 +214,9 @@ h2{
     width: auto;
 }
 
+.center-h2{
+    text-align: center;
+}
 
 .col-md-2 {
     padding: 0 !important;
@@ -232,4 +235,5 @@ h2{
 
 #prevTimetable, #nextTimetable{
     cursor:  pointer;
+    margin-top: 8px;
 }
