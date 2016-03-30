@@ -56,17 +56,21 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     min-height: 600px;
     height: 150%;
     transition: all 400ms;
+    background-color: #fafafa;
+    z-index: 1;
 }
 
-.time-table-container {
-    margin-bottom: 40px;
-    position: absolute;
-}
+/*.time-table-container {*/
+    /*margin-bottom: 40px;*/
+    /*position: absolute;*/
+/*}*/
 
 .menu-on {
     left: 0;
     box-shadow: 8px 8px 20px -2px rgba(0, 0, 0, 0.2);
     transition: all 400ms;
+    background-color: #fafafa;
+    z-index: 1;
 }
 
 .fa-cog{
@@ -101,7 +105,6 @@ span.notification{
 
 .profile-pic{
     height: 70px;
-    width: 25%;
     margin-bottom: 10px;
     border-radius: 50px;
 }
