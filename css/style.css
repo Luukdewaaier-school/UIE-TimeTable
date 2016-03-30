@@ -106,11 +106,14 @@ span.notification{
 }
 
 p.profile-name{
+    font-weight: bold;
     margin-bottom: 0;
+    color: #009688;
 }
 
 p.profile-education{
-    color: #c3c3c3;
+    color: #009688;
+    font-weight: lighter;
 }
 
 .search-bar{
@@ -150,11 +153,18 @@ div.notifications{
 
 
 .topTimeTable{
-    background-color: #00bcd4 !important;
     padding-top: 15px !important;
     padding-bottom: 15px !important;
     color: #fafafa !important;
     margin-bottom: 0 !important;
+}
+
+.topTimeTable-background-light{
+    background-color: #00bcd4 !important;
+}
+
+.topTimeTable-background-dark{
+    background-color: #006064 !important;
 }
 
 /* ------------- Fancy hamburger icon ------------- */
