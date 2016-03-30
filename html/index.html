@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-switch.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -60,6 +61,35 @@
             <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
             <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
             <p class="notification-week">Week 5: <span class="notification">Monday (28-05) - No School</span></p>
+        </div>
+    </div>
+
+    <!----------modal---------->
+    <div class="container">
+        <div class="modal fade" id="settings" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Settings</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="theme-settings">
+                            <label for="switch-offColor">Dark theme</label><br />
+                            <input id="switch-offColor" type="checkbox" data-off-color="default">
+                        </div>
+                        <div class="class-settings">
+                            <label class="default-class">Add default class</label>
+                            <input type="text" placeholder="Default class 1" class="form-control default-class" /><br />
+                            <input type="text" placeholder="Default class 2" class="form-control default-class" />
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default close-modal" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -475,6 +505,8 @@
     <script type="text/javascript" src="../javascript/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="../javascript/materialize.min.js"></script>
     <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/bootstrap-switch.min.js"></script>
     <script type="text/javascript" src="../javascript/script.js"></script>
+
 </body>
 </html>

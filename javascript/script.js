@@ -1,4 +1,7 @@
 $(function(){
+
+    $("#switch-offColor").bootstrapSwitch();
+
     var menu = false;
     var hamburger = $(".hamburger");
     var navToggle = $("#nav-toggle");
@@ -12,6 +15,11 @@ $(function(){
 
         isMenuOn = !isMenuOn;
         tableContainer.animate({ left:(isMenuOn) ? "12%" : "0"}, 400);
+    });
+
+    //settings button click
+    $(".fa-cog").click(function(){
+        $("#settings").modal("show");
     });
 
     /*$("td").click(function(){
