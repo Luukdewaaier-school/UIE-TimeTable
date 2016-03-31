@@ -68,7 +68,7 @@ $(function(){
         $("div.compare-bar input[type='text']").attr("placeholder", (english) ? "Compare" : "Vergelijk");
         $(".notifications h4").text((english) ? "Notifications" : "Wijzigingen");
         $(".modal-title").text((english) ? "Settings" : "Instellingen");
-        $("label[for='switch-offColor']").text((english) ? "Light theme" : "Licht thema");
+        $("label[for='switch-offColor']").text((english) ? "Dark theme" : "Donker thema");
         $("label[for='switch-offText']").text((english) ? "Set language to Dutch" : "Zet taal naar Nederlands");
         $("label.default-class").text((english) ? "Default classes" : "Standaard ingestelde klassen");
         $("input[type='text'].default-class1").attr("placeholder", (english) ? "Default class 1" : "Standaard klas 1");
