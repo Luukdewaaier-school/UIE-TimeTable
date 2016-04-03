@@ -75,6 +75,11 @@ $(function(){
         $("input[type='text'].default-class2").attr("placeholder", (english) ? "Default class 2" : "Standaard klas 2");
         $(".close-modal").text((english) ? "Close" : "Sluit");
         $("span.notification").text((english) ? "Monday (28-05) - No school" : "Maandag (28-05) - Geen school");
+        $(".Mon").text((english) ? "Mon" : "Ma");
+        $(".Tue").text((english) ? "Tue" : "Di");
+        $(".Wed").text((english) ? "Wed" : "Woe");
+        $(".Thu").text((english) ? "Thu" : "Do");
+        $(".Fri").text((english) ? "Fri" : "Vr");
     };
 
     textSwitch.on('switchChange.bootstrapSwitch', function(){
