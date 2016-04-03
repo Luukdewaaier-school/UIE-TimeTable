@@ -41,6 +41,8 @@ $(function(){
         $(".notifications h4").css("color","#b2dfdb");
         $(".notification").css("color","#fafafa");
         $("center-h2").css("color","#b2dfdb");
+        $(".class1").css("background-color", "#004d40");
+        $(".class2").css("background-color", "#00695c");
     };
 
     var lightTheme = function(){
@@ -54,6 +56,9 @@ $(function(){
         $(".notification-week").css("color","#00bcd4");
         $(".notifications h4").css("color","#009688");
         $("center-h2").css("color","#fafafa");
+        $(".class1").css("background-color", "#009688");
+        $(".class2").css("background-color", "#4db6ac");
+
     };
 
     //set theme
