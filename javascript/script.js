@@ -43,6 +43,7 @@ $(function(){
         $("center-h2").css("color","#b2dfdb");
         $(".class1").css("background-color", "#004d40");
         $(".class2").css("background-color", "#00695c");
+        $(".subject p").css("color", "#fafafa");
     };
 
     var lightTheme = function(){
@@ -58,6 +59,8 @@ $(function(){
         $("center-h2").css("color","#fafafa");
         $(".class1").css("background-color", "#009688");
         $(".class2").css("background-color", "#4db6ac");
+        $(".subject p").css("color", "#b2dfdb");
+
 
     };
 
