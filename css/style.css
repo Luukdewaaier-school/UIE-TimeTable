@@ -65,8 +65,17 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     left: 0;
     box-shadow: 8px 8px 20px -2px rgba(0, 0, 0, 0.2);
     transition: all 400ms;
-    background-color: #fafafa;
+    background-color: #efefef;
     z-index: 1;
+}
+
+.options-on{
+    display: block;
+}
+
+.options-off{
+    display: none;
+    transition: all 400ms;
 }
 
 .fa-cog{
@@ -77,9 +86,6 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     cursor: pointer;
 }
 
-.form-group{
-    margin: 14px 0 0 20px;
-}
 
 .glyphicon-search{
     color: #c3c3c3;
@@ -123,12 +129,17 @@ p.profile-education{
 input[type=text]{
     width: 90%;
     height: 38px;
-    border-radius: 0;
+    border-radius: 3px;
     text-align: center;
 }
 
-div.notifications{
-    margin: 34px 0 0 20px;
+.inputText{
+    background-color: #fafafa;
+    color: #555;
+}
+
+.glyphicon-search{
+    color: #9A9A9A;
 }
 
 /* enable absolute positioning */
@@ -276,7 +287,7 @@ label.default-class{
 
 input.default-class1, input.default-class2{
     width: 60%;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 button.close-modal{
@@ -307,3 +318,40 @@ button.close-modal:hover{
 .class2{
     background-color: #4db6ac;
 }
+
+#hamburger-main, #hamburger-options {
+    width: 100%;
+
+}
+
+.hamburger-options{
+    color:#009688;
+}
+
+.hamburger-wrapper{
+    margin-top:-18px;
+    padding: 34px 0 0 20px;
+    border-top:1px solid #e3e3e3;
+    background-color: #fafafa;
+    height: 100%;
+}
+
+.options-button-inactive{
+    transition: all 400ms;
+}
+
+.options-button-active{
+    transform: rotate(45deg);
+    transition: all 400ms;
+}
+
+#hidden{
+    display: none !important;
+}
+
+.bootstrap-switch{
+    border-radius: 3px !important;
+}
+
+
+
