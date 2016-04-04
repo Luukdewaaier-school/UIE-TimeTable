@@ -41,6 +41,9 @@ $(function(){
         $(".notifications h4").css("color","#b2dfdb");
         $(".notification").css("color","#fafafa");
         $("center-h2").css("color","#b2dfdb");
+        $(".class1").css("background-color", "#004d40");
+        $(".class2").css("background-color", "#00695c");
+        $(".subject p").css("color", "#fafafa");
     };
 
     var lightTheme = function(){
@@ -54,6 +57,11 @@ $(function(){
         $(".notification-week").css("color","#00bcd4");
         $(".notifications h4").css("color","#009688");
         $("center-h2").css("color","#fafafa");
+        $(".class1").css("background-color", "#009688");
+        $(".class2").css("background-color", "#4db6ac");
+        $(".subject p").css("color", "#b2dfdb");
+
+
     };
 
     //set theme
@@ -75,6 +83,11 @@ $(function(){
         $("input[type='text'].default-class2").attr("placeholder", (english) ? "Default class 2" : "Standaard klas 2");
         $(".close-modal").text((english) ? "Close" : "Sluit");
         $("span.notification").text((english) ? "Monday (28-05) - No school" : "Maandag (28-05) - Geen school");
+        $(".Mon").text((english) ? "Mon" : "Ma");
+        $(".Tue").text((english) ? "Tue" : "Di");
+        $(".Wed").text((english) ? "Wed" : "Woe");
+        $(".Thu").text((english) ? "Thu" : "Do");
+        $(".Fri").text((english) ? "Fri" : "Vr");
     };
 
     textSwitch.on('switchChange.bootstrapSwitch', function(){
