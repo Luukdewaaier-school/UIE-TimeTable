@@ -85,7 +85,7 @@ $(function(){
         $("span.notification").text((english) ? "Monday (28-05) - No school" : "Maandag (28-05) - Geen school");
         $(".Mon").text((english) ? "Mon" : "Ma");
         $(".Tue").text((english) ? "Tue" : "Di");
-        $(".Wed").text((english) ? "Wed" : "Woe");
+        $(".Wed").text((english) ? "Wed" : "Wo");
         $(".Thu").text((english) ? "Thu" : "Do");
         $(".Fri").text((english) ? "Fri" : "Vr");
     };
@@ -109,7 +109,11 @@ $(function(){
             week.text("Week " + (--currentWeek));
             date.setDate(date.getDate()-7);
             dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
+
+            generateClasses();
         }
+
+
     });
 
     //next week glyphicon click
@@ -120,18 +124,37 @@ $(function(){
             week.text("Week " + (++currentWeek));
             date.setDate(date.getDate() + 7);
             dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
+
+            generateClasses();
         }
     });
 
-    /*$("td").click(function(){
-        var data = getFormatedTableData("09:00 - 11:00", "pts4(beer)", "P2n_0.05")
-        $(this).html("<div class='add-wrap'>" + data + "</div>");
+    var randomNumbers = function () {
+        var array = [];
+        for (var i = 0; i < 25; i++) {
+            var num = array.push(Math.floor(Math.random() * 50) + 1);
+            if (array.indexOf(num) < 0) {
+                array.push(num);
+            }
+        }
+        return array;
+    };
 
-    });*/
+    var fillTimeTable = function (array) {
+        var arr = ["<div class='subject class2'><p>gdp(zw)</p><p>R1_3.10</p></div>"
+            , "<div class='subject class1'><p>vsa41(beer)</p><p>P1.03</p></div>"
+            , "<div class='subject class1'><p>jcf41 (haml)</p><p>P1.03</p></div>"];
+        for (var i = 0; i < array.length; i++) {
+            $(".boxBorder:eq(" + array[i] + ")").html(arr[Math.floor(Math.random() * 2)]);
+        }
+    };
 
-    /*var getFormatedTableData = function(time, teacher, location){
-        return "<p class='add-para para-time'>" + time + "</p>" +
-                "<p class='add-para'>" + teacher + "</p>" +
-                "<p class='add-para'>" + location + "</p>";
-    };*/
+    var generateClasses = function () {
+        //generate random classes in the time-table
+        var array = randomNumbers();
+        for (var i = 0; i < array.length; i++) {
+            $("div.subject:eq(" + array[i] + ")").remove();
+        }
+        fillTimeTable(randomNumbers());
+    };
 });
