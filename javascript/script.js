@@ -12,6 +12,10 @@ $(function(){
 
     var menu = false;
     var hamburger = $(".hamburger");
+    var hamburger_options = $(".hamburger-options");
+    var hamburger_wrapper = $(".hamburger-wrapper")
+    var inputText = $(".inputText");
+    var hamburger_main = $(".hamburger-main");
     var navToggle = $("#nav-toggle");
     var tableContainer = $(".time-table-container");
     var isMenuOn = false;
@@ -27,7 +31,12 @@ $(function(){
 
     //settings button click
     $(".fa-cog").click(function(){
-        $("#settings").modal("show");
+        //$("#settings").modal("show");
+        $(".fa-cog").toggleClass("options-button-active", "options-button-inactive");
+
+        hamburger_options.toggleClass("options-off", "options-on");
+        hamburger_main.toggleClass("options-off", "options-on");
+        hamburger_wrapper.toggleClass("wrapper-options-on", "wrapper-options-off")
     });
 
     var darkTheme = function(){
@@ -44,12 +53,21 @@ $(function(){
         $(".class1").css("background-color", "#004d40");
         $(".class2").css("background-color", "#00695c");
         $(".subject p").css("color", "#fafafa");
+        $(".hamburger-options").css("color", "#fafafa");
+        hamburger_wrapper.css("border", "solid 1px #212121");
+        hamburger_wrapper.css("background-color", "#383838");
+        $(".hamburger-border").css("border", "solid 1px #212121");
+        inputText.css("background-color", "#616161");
+        inputText.css("color", "#fafafa");
+        inputText.css("border", "solid 1px #212121");
+        $(".glyphicon-search").css("color", "#c3c3c3")
+        $(".bootstrap-switch").css("background-color", "#616161");
     };
 
     var lightTheme = function(){
         $("body").css("background-color","#fafafa");
         $(".topTimeTable").toggleClass("topTimeTable-background-dark", "topTimeTable-background-light");
-        $(".hamburger").css("background-color","#fafafa");
+        $(".hamburger").css("background-color","#efefef");
         $(".boxBorder").css("border-color","#e0e0e0");
         $(".profile-name").css("color","#009688");
         $(".fa-cog").css("color","#fafafa");
@@ -60,8 +78,15 @@ $(function(){
         $(".class1").css("background-color", "#009688");
         $(".class2").css("background-color", "#4db6ac");
         $(".subject p").css("color", "#b2dfdb");
-
-
+        $(".hamburger-options").css("color", "#009688");
+        hamburger_wrapper.css("border", "solid 1px #e3e3e3");
+        hamburger_wrapper.css("background-color", "#fafafa");
+        $(".hamburger-border").css("border", "solid 1px #e3e3e3");
+        inputText.css("background-color", "#fafafa");
+        inputText.css("color", "#555");
+        inputText.css("border", "solid 1px #ccc");
+        $(".glyphicon-search").css("color", "#9A9A9A")
+        $(".bootstrap-switch").css("background-color", "#eee");
     };
 
     //set theme
