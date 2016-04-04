@@ -82,6 +82,34 @@ $(function(){
         isDutch = !isDutch;
     });
 
+    var date = new Date('2016-04-04T00:00:00+05:30');
+    var currentWeek = 15;
+    var week = $(".h2");
+    var dateString = $(".h5");
+    var weekInfo = $("div.week-info");
+
+    //previous week glyphicon click
+    $("#prevTimeTable").click(function(){
+        if(currentWeek > 1){
+            weekInfo.hide("slide", { direction: "left" }, 100);
+            weekInfo.show("slide", { direction: "right" }, 100);
+            week.text("Week " + (--currentWeek));
+            date.setDate(date.getDate()-7);
+            dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
+        }
+    });
+
+    //next week glyphicon click
+    $("#nextTimeTable").click(function(){
+        if(currentWeek > 1 && currentWeek <= 18) {
+            weekInfo.hide("slide", {direction: "right"}, 100);
+            weekInfo.show("slide", {direction: "left"}, 100);
+            week.text("Week " + (++currentWeek));
+            date.setDate(date.getDate() + 7);
+            dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
+        }
+    });
+
     /*$("td").click(function(){
         var data = getFormatedTableData("09:00 - 11:00", "pts4(beer)", "P2n_0.05")
         $(this).html("<div class='add-wrap'>" + data + "</div>");

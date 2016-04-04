@@ -242,9 +242,13 @@ h2{
     font-weight: lighter;
 }
 
-#prevTimetable, #nextTimetable{
+#prevTimeTable, #nextTimeTable {
     cursor:  pointer;
     margin-top: 8px;
+}
+
+div.week-info{
+    width: 300px;
 }
 
 /*styles for the settings modal*/
