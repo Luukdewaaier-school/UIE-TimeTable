@@ -161,15 +161,7 @@ $(function(){
         WeekPrev(true);
     });
 
-    //highlight zoekresultaat
-    var searchbar = $("div.search-bar input[type='text']");
-    searchbar.on('input', function() {
-        var subject = $("div.subject p");
-        subject.each(function(i){
-            var searchVal = searchbar.val();
-            this.style.color = (subject.eq(i).text().indexOf(searchVal) >= 0 && searchVal.length != 0) ? "yellow" : "#fafafa";
-        });
-    });
+
 
     //next week glyphicon click
     $("#nextTimeTable").click(function(){
@@ -202,6 +194,16 @@ $(function(){
 
         }
     }
+
+    //highlight zoekresultaat
+    var searchbar = $("div.search-bar input[type='text']");
+    searchbar.on('input', function() {
+        var subject = $("div.subject p");
+        subject.each(function(i){
+            var searchVal = searchbar.val();
+            this.style.color = (subject.eq(i).text().indexOf(searchVal) >= 0 && searchVal.length != 0) ? "yellow" : "#fafafa";
+        });
+    });
 
     var randomNumbers = function () {
         var array = [];
