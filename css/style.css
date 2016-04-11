@@ -184,6 +184,10 @@ input[type=text]{
 }
 
 /* ------------- Fancy hamburger icon ------------- */
+.ham-toggle{
+    margin-top: 65px;
+}
+
 #nav-toggle { position: absolute; left: 50%; top: 50%; }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -192,7 +196,6 @@ input[type=text]{
     height: 5px;
     width: 35px;
     background: white;
-    margin-top: 30px;
     position: absolute;
     display: block;
     content: '';
