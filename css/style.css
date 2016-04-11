@@ -36,6 +36,10 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
     cursor: pointer;
 }
 
+.time-table-heading {
+    color: #fafafa !important;
+}
+
 .hamburger{
     width: 30%;
 }
@@ -58,6 +62,7 @@ ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
 
 .time-table-container {
     margin-bottom: 40px;
+    padding-top: 0 !important;
     /*position: absolute;*/
 }
 
@@ -164,7 +169,7 @@ input[type=text]{
 
 
 .topTimeTable{
-    padding-top: 50px !important;
+    padding-top: 10px !important;
     padding-bottom: 15px !important;
     color: #fafafa !important;
     margin-bottom: 0 !important;
@@ -187,6 +192,7 @@ input[type=text]{
     height: 5px;
     width: 35px;
     background: white;
+    margin-top: 30px;
     position: absolute;
     display: block;
     content: '';
@@ -260,6 +266,7 @@ h2{
 
 div.week-info{
     width: 300px;
+    margin-left: 30px;
 }
 
 /*styles for the settings modal*/
