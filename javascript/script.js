@@ -13,7 +13,7 @@ $(function(){
     var menu = false;
     var hamburger = $(".hamburger");
     var hamburger_options = $(".hamburger-options");
-    var hamburger_wrapper = $(".hamburger-wrapper")
+    var hamburger_wrapper = $(".hamburger-wrapper");
     var inputText = $(".inputText");
     var hamburger_main = $(".hamburger-main");
     var navToggle = $("#nav-toggle");
@@ -27,16 +27,17 @@ $(function(){
 
         isMenuOn = !isMenuOn;
         tableContainer.animate({ left:(isMenuOn) ? "12%" : "0"}, 400);
+        if (hamburger_main.hasClass("options-off")) {
+            hamburger_options.toggleClass("options-off", "options-on");
+            hamburger_main.toggleClass("options-off", "options-on");
+        }
     });
 
     //settings button click
     $(".fa-cog").click(function(){
-        //$("#settings").modal("show");
         $(".fa-cog").toggleClass("options-button-active", "options-button-inactive");
-
         hamburger_options.toggleClass("options-off", "options-on");
         hamburger_main.toggleClass("options-off", "options-on");
-        hamburger_wrapper.toggleClass("wrapper-options-on", "wrapper-options-off")
     });
 
     var darkTheme = function(){
@@ -60,7 +61,7 @@ $(function(){
         inputText.css("background-color", "#616161");
         inputText.css("color", "#fafafa");
         inputText.css("border", "solid 1px #212121");
-        $(".glyphicon-search").css("color", "#c3c3c3")
+        $(".glyphicon-search").css("color", "#c3c3c3");
         $(".bootstrap-switch").css("background-color", "#616161");
     };
 
@@ -85,7 +86,7 @@ $(function(){
         inputText.css("background-color", "#fafafa");
         inputText.css("color", "#555");
         inputText.css("border", "solid 1px #ccc");
-        $(".glyphicon-search").css("color", "#9A9A9A")
+        $(".glyphicon-search").css("color", "#9A9A9A");
         $(".bootstrap-switch").css("background-color", "#eee");
     };
 
