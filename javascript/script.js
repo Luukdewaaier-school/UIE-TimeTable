@@ -19,6 +19,54 @@ $(function(){
     var navToggle = $("#nav-toggle");
     var tableContainer = $(".time-table-container");
     var isMenuOn = false;
+    var currentWeekItem = $(".currentWeek");
+    var currentWeek = $(".currentWeek").text();
+    var dropdownItems = $(".weeknr");
+
+    // HighlighSelectedWeek();
+    // console.log(currentWeek);
+    // function HighlighSelectedWeek () {
+    //     $.each( dropdownItems, function( key, value ) {
+    //         value.classList.remove("currentWeekSelected");
+    //         if(value.innerHTML.trim() == currentWeek.trim()){
+    //             //console.log(value);
+    //             value.classList.add("currentWeekSelected");
+    //             console.log(value);
+    //         }
+    //
+    //     });
+    // }
+    //
+    // currentWeekItem.click(function (event) {
+    //     HighlighSelectedWeek();
+    // });
+
+    dropdownItems.click(function (event) {
+        var curWeek = parseInt(currentWeek);
+        console.log(curWeek);
+        var weekWeek = parseInt($(event.target).text().replace("Week", "").trim());
+        SwitchWeek(curWeek, weekWeek);
+    });
+
+    function SwitchWeek (Weekfrom, WeekTo) {
+
+        if(Weekfrom > WeekTo){
+            var dif = Weekfrom - WeekTo;
+            for (var i = 0; i < dif; i++) {
+                WeekPrev(false);
+            }
+
+        } else if(Weekfrom < WeekTo){
+            var dif = WeekTo - Weekfrom;
+            for (var i = 0; i < dif; i++) {
+                WeekNext(false);
+            }
+
+        } else{
+
+        }
+    }
+
 
     navToggle.click(function(){
         hamburger.toggleClass("menu-on","menu-off");
@@ -128,31 +176,41 @@ $(function(){
 
     //previous week glyphicon click
     $("#prevTimeTable").click(function(){
-        if(currentWeek > 1){
-            weekInfo.hide("slide", { direction: "left" }, 100);
-            weekInfo.show("slide", { direction: "right" }, 100);
-            week.text("Week " + (--currentWeek));
-            date.setDate(date.getDate()-7);
-            dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
-
-            generateClasses();
-        }
-
-
+        WeekPrev(true);
     });
 
     //next week glyphicon click
     $("#nextTimeTable").click(function(){
+        WeekNext(true);
+    });
+
+    function WeekNext(animation) {
         if(currentWeek > 1 && currentWeek <= 18) {
-            weekInfo.hide("slide", {direction: "right"}, 100);
-            weekInfo.show("slide", {direction: "left"}, 100);
+            if(animation) {
+                weekInfo.hide("slide", {direction: "right"}, 100);
+                weekInfo.show("slide", {direction: "left"}, 100);
+            }
             week.text("Week " + (++currentWeek));
             date.setDate(date.getDate() + 7);
             dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
 
             generateClasses();
         }
-    });
+    }
+    function WeekPrev(animation) {
+        if(currentWeek > 1){
+            if(animation) {
+                weekInfo.hide("slide", {direction: "left"}, 100);
+                weekInfo.show("slide", {direction: "right"}, 100);
+            }
+            week.text("Week " + (--currentWeek));
+            date.setDate(date.getDate()-7);
+            dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
+
+            generateClasses();
+
+        }
+    }
 
     var randomNumbers = function () {
         var array = [];

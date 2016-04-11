@@ -364,5 +364,13 @@ button.close-modal:hover{
     border-radius: 3px !important;
 }
 
+.currentWeekSelected {
+    background-color: #00bcd4;
+}
+
+.currentWeek{
+    cursor: pointer;
+}
+
 
 
