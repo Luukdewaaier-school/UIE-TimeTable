@@ -137,8 +137,16 @@ $(function(){
 
             generateClasses();
         }
+    });
 
-
+    //highlight zoekresultaat
+    var searchbar = $("div.search-bar input[type='text']");
+    searchbar.on('input', function() {
+        var subject = $("div.subject p");
+        subject.each(function(i){
+            var searchVal = searchbar.val();
+            this.style.color = (subject.eq(i).text().indexOf(searchVal) >= 0 && searchVal.length != 0) ? "yellow" : "#fafafa";
+        });
     });
 
     //next week glyphicon click
@@ -149,7 +157,6 @@ $(function(){
             week.text("Week " + (++currentWeek));
             date.setDate(date.getDate() + 7);
             dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
-
             generateClasses();
         }
     });
