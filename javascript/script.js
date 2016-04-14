@@ -15,6 +15,7 @@ $(function(){
     var hamburger_options = $(".hamburger-options");
     var inputText = $(".inputText");
     var hamburger_main = $(".hamburger-main");
+    var hamburger_wrapper = $(".hamburger-wrapper");
     var navToggle = $("#nav-toggle");
     var tableContainer = $(".time-table-container");
     var isMenuOn = false;
