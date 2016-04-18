@@ -1,0 +1,383 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #fafafa;
+}
+
+.navbar-collapse, .navbar-collapse .navbar-nav > li > a:hover, .navbar-collapse .navbar-nav > li > a:focus {
+    background-color: #00bcd4;
+}
+
+ul li a, ul li a:hover, ul li a:active, ul li a:link, ul li a:focus {
+    color: #fafafa;
+}
+
+.navbar-nav{
+    margin-left: 80px;
+    height: 50px;
+}
+
+.navbar-right{
+    margin-right: 60px;
+}
+
+.head-li{
+    margin-left: 35px;
+}
+
+.fa-bars{
+    padding-top: 10px;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.time-table-heading {
+    color: #fafafa !important;
+}
+
+.hamburger{
+    width: 30%;
+}
+
+.hamburger-border{
+    border-right: 1px solid #e6e6e6;
+}
+
+.menu-off {
+    position: absolute;
+    left: -50%;
+    width: 22%;
+    display: block;
+    min-height: 600px;
+    height: 150%;
+    transition: all 400ms;
+    background-color: #fafafa;
+    z-index: 1;
+}
+
+.time-table-container {
+    margin-bottom: 40px;
+    padding-top: 0 !important;
+    /*position: absolute;*/
+}
+
+.menu-on {
+    left: 0;
+    box-shadow: 8px 8px 20px -2px rgba(0, 0, 0, 0.2);
+    transition: all 400ms;
+    background-color: #efefef;
+    z-index: 1;
+}
+
+.options-on{
+    display: block;
+}
+
+.options-off{
+    display: none;
+    transition: all 400ms;
+}
+
+.fa-cog{
+    color: #fafafa;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+
+.glyphicon-search{
+    color: #c3c3c3;
+    font-size: 12pt;
+    border-right: 1px solid #c3c3c3;
+}
+
+p.notification-week{
+    color: #00bcd4;
+}
+
+span.notification{
+    color: #c3c3c3;
+}
+
+.profile{
+    margin: 20px 0 0 20px;
+}
+
+.profile-pic{
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+p.profile-name{
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #009688;
+}
+
+p.profile-education{
+    color: #009688;
+    font-weight: lighter;
+}
+
+.search-bar{
+    margin-bottom: 10px;
+}
+
+input[type=text]{
+    width: 90%;
+    height: 38px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.inputText{
+    background-color: #fafafa;
+    color: #555;
+}
+
+.glyphicon-search{
+    color: #9A9A9A;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0;}
+.right-addon .glyphicon { right: 0;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+.topTimeTable{
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    color: #fafafa !important;
+    margin-bottom: 0 !important;
+}
+
+.topTimeTable-background-light{
+    background-color: #00bcd4 !important;
+}
+
+.topTimeTable-background-dark{
+    background-color: #006064 !important;
+}
+
+/* ------------- Fancy hamburger icon ------------- */
+.ham-toggle{
+    margin-top: 65px;
+}
+
+#nav-toggle { position: absolute; left: 50%; top: 50%; }
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+#nav-toggle span:before {
+    top: -10px;
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 400ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+.rowJumbo{
+    display: inline;
+    height: 30px;
+    vertical-align: bottom;
+}
+
+h2{
+    font-weight: lighter !important;
+    color: #009688 !important;
+}
+
+.boxBorder{
+    border: solid 1px #e0e0e0;
+}
+
+.box{
+    height: 75px;
+    width: auto;
+}
+
+.center-h2{
+    text-align: center;
+}
+
+.col-md-2 {
+    padding: 0 !important;
+}
+
+.boxTime {
+    position: relative;
+}
+.boxTime span{
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    color: #256e71;
+    font-weight: lighter;
+}
+
+#prevTimeTable, #nextTimeTable {
+    cursor:  pointer;
+    margin-top: 8px;
+}
+
+div.week-info{
+    width: 300px;
+    margin-left: 30px;
+}
+
+/*styles for the settings modal*/
+.modal-body{
+    border: 2px solid #00bcd4;
+    border-radius: 6px;
+    margin: 10px 20px 20px 20px;
+}
+
+.theme-settings{
+    margin-bottom: 20px;
+}
+
+label[for="switch-offColor"]{
+    margin-right: 40px;
+}
+
+.class-settings{
+    margin-bottom: 20px;
+}
+
+.language-settings{
+    margin-bottom: 20px;
+}
+
+label.default-class{
+    margin-right: 40px;
+}
+
+input.default-class1, input.default-class2{
+    width: 60%;
+    border-radius: 3px;
+}
+
+button.close-modal{
+    margin-left: 85%;
+    background-color: #00bcd4;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+button.close-modal:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.subject {
+    border: none;
+    color: #fafafa;
+    height: 100%;
+    padding: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.class1{
+    background-color: #009688;
+}
+
+.class2{
+    background-color: #4db6ac;
+}
+
+#hamburger-main, #hamburger-options {
+    width: 100%;
+
+}
+
+.hamburger-options{
+    color:#009688;
+}
+
+.hamburger-wrapper{
+    margin-top:-18px;
+    padding: 34px 0 0 20px;
+    border-top:1px solid #e3e3e3;
+    background-color: #fafafa;
+    height: 100%;
+}
+
+.options-button-inactive{
+    transition: all 400ms;
+}
+
+.options-button-active{
+    transform: rotate(45deg);
+    transition: all 400ms;
+}
+
+#hidden{
+    display: none !important;
+}
+
+.bootstrap-switch{
+    border-radius: 3px !important;
+}
+
+.currentWeekSelected {
+    background-color: #00bcd4;
+}
+
+.currentWeek{
+    cursor: pointer;
+}
+
+.smaller{
+    font-size: 12px !important;
+}
+
+
+
