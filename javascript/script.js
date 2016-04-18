@@ -175,7 +175,7 @@ $(function(){
                 weekInfo.hide("slide", {direction: "right"}, 100);
                 weekInfo.show("slide", {direction: "left"}, 100);
             }
-            week.text("Week " + (++currentWeek));
+            week.html("Week " + (++currentWeek) + " <span class='smaller'>▼</span>");
             date.setDate(date.getDate() + 7);
             dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
             generateClasses();
@@ -187,7 +187,7 @@ $(function(){
                 weekInfo.hide("slide", {direction: "left"}, 100);
                 weekInfo.show("slide", {direction: "right"}, 100);
             }
-            week.text("Week " + (--currentWeek));
+            week.html("Week " + (--currentWeek) + " <span class='smaller'>▼</span>");
             date.setDate(date.getDate()-7);
             dateString.text("  (" + (date.getDate() + 1) + " - " + (date.getMonth() + 1) + " - " + date.getFullYear() + ")");
 
