@@ -375,5 +375,9 @@ button.close-modal:hover{
     cursor: pointer;
 }
 
+.smaller{
+    font-size: 12px !important;
+}
+
 
 
